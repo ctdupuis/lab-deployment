@@ -12,6 +12,10 @@ const {
 
 app.get("/", home);
 
+app.get('/js', (req, res) => {
+    res.sendFile(path.join(__dirname, '../public/main.js'))
+})
+
 const port = process.env.PORT || 4004
 
 app.listen(port, () => console.log(`Running on port ${port}`));
