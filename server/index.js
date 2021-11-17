@@ -4,7 +4,7 @@ const app = express();
 
 const path = require("path");
 
-app.use('/js', express.static("public"));
+app.use(express.static("public"));
 
 const {
     home
