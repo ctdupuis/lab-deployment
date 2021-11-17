@@ -7,10 +7,12 @@ const path = require("path");
 app.use(express.static("public"));
 
 const {
-    home
+    home,
+    about
 } = require('./controller');
 
 app.get("/", home);
+app.get("/", about);
 
 const port = process.env.PORT || 4004
 
