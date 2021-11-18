@@ -20,6 +20,10 @@ body {
     justify-content: center;
 }
 
+.flex-cont {
+    display: flex;
+}
+
 input {
     border-radius: 10px;
     outline: none;

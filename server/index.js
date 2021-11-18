@@ -4,11 +4,13 @@ const app = express();
 
 const path = require("path");
 
-app.use(express.static("public"));
+app.use(express.static("public/assets"));
+
 
 
 const {
-    home
+    home,
+    about
 } = require('./controller');
 
 app.get("/", home);
