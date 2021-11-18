@@ -4,7 +4,7 @@ const app = express();
 
 const path = require("path");
 
-app.use(express.static("public/assets"));
+app.use(express.static("public"));
 
 
 
