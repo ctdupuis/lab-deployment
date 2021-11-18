@@ -1,7 +1,5 @@
 const express = require('express');
 
-require('dotenv').config();
-
 const app = express();
 
 const path = require("path");
@@ -9,16 +7,12 @@ const path = require("path");
 app.use(express.static("public"));
 
 
-
-
 const {
-    home,
-    about
+    home
 } = require('./controller');
 
 app.get("/", home);
-app.get("/", about);
 
-const port = process.env.PORT || 4004
+const port = process.env.PORT || 4105
 
 app.listen(port, () => console.log(`Running on port ${port}`));

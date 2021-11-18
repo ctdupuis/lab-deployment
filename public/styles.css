@@ -6,10 +6,22 @@ body {
     background-color: rgb(41, 41, 41);
 }
 
-h1 {
-    color: blue;
+.head {
+    padding: 2%;
 }
 
-h2 {
-    color: red;
+.wrapper {
+    padding: 3%;
+}
+
+.form-container {
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    border-radius: 10px;
+    outline: none;
+    border: none;
 }
