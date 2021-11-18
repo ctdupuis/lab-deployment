@@ -2,15 +2,11 @@ const express = require('express');
 
 const app = express();
 
-const path = require("path");
 
 app.use(express.static("public"));
 
-
-
 const {
-    home,
-    about
+    home
 } = require('./controller');
 
 app.get("/", home);

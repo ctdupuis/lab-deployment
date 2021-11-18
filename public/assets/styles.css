@@ -1,9 +1,22 @@
+:root {
+    --blue: rgb(82, 185, 220);
+    --blue-d: rgb(7, 112, 147);
+    --grey: rgb(172, 172, 172);
+}
+
 * {
     margin: 0;
 }
 
 body {
-    background-color: rgb(41, 41, 41);
+    background-color: whitesmoke;
+}
+
+h2 {
+    margin: 2%;
+    color: var(--grey);
+    border-bottom: 1px solid var(--grey);
+    box-shadow: 2px 2px 2px var(--grey);
 }
 
 .head {
@@ -11,21 +24,67 @@ body {
 }
 
 .wrapper {
-    padding: 3%;
+    padding: 2%;
+}
+
+.center-just {
+    justify-content: center;
 }
 
 .form-container {
-    background-color: grey;
-    display: flex;
-    justify-content: center;
+    background-color: var(--blue-d);
+    width: 50%;
+    box-shadow: 0px 7px 20px 0px;
+}
+
+#todo {
+    text-align: center;
+    margin: 1%;
+}
+
+#todo label {
+    margin-right: 2%;
+}
+
+#todo input {
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    background-color: whitesmoke;
+    transition: 0.2s;
+    padding: .5%;
+}
+
+#todo input:focus {
+    background-color: whitesmoke;
+    box-shadow: inset -10px -10px 10px var(--blue);
+}
+
+#todo input::placeholder {
+    color: black;
 }
 
 .flex-cont {
     display: flex;
 }
 
-input {
-    border-radius: 10px;
-    outline: none;
-    border: none;
+.spaced {
+    justify-content: space-evenly;
+}
+
+.col {
+    flex-direction: column;
+}
+
+#create {
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: .4%;
+    transition: 0.5s;
+}
+
+#create:hover {
+    cursor: pointer;
+    background-color: var(--blue);
+    color: whitesmoke;
 }

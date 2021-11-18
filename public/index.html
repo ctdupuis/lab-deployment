@@ -15,14 +15,24 @@
     </header>
 
     <div class="wrapper">
-        <div class="form-container">
-            <form id="todo">
-                <div class="flex-cont">
-                    <h3>Create a New Todo List</h3>
-                    <label>Name Your List</label>
-                    <input name="todo-name" type="text" placeholder="List name here..." />
-                </div>    
-            </form>
+        <div class="flex-cont center-just">
+
+            <div class="form-container">
+                <form id="todo">
+                    <h2>Create a New Todo List</h2>
+
+                    <label for="todo-name">Name Your List</label>
+                    <input id="todo-name" type="text" placeholder="List name here..." />
+
+                    <button id="create" type="submit">Create</button>
+                </form>
+            </div>    
+        </div>
+
+        <div class="flex-cont center-just">
+            <div id="render-todo">
+
+            </div>
         </div>
     </div>
 
